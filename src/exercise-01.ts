@@ -9,3 +9,5 @@ console.log(user.age);
 
 const list = [1, 2, 3];
 const first = list[5];
+
+// the relevance of typos on a strict mode project. 
