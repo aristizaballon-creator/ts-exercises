@@ -36,7 +36,6 @@ const userResponse: ApiResponse<User[]> = {
 
 const lastUser = getLast(users);
 const foundUser = findById(users, 2);
-const notAnObject = findById([1, 2, 3], 1);
 
 console.log(lastUser);
 console.log(foundUser);

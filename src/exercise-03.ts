@@ -32,7 +32,6 @@ function updateUser(user: User, changes: Partial<User>) {
 
 updateUser(user, { age: 25 });
 updateUser(user, { name: "Ana María", role: "admin" });
-updateUser(user, { agee: 25 });
 
 function getPublicProfile(user: User): Pick<User, "id" | "name">  {
     return { id: user.id, name: user.name }
@@ -48,4 +47,3 @@ function createUser (input: Omit<User, "id">): User {
 }
 
 createUser({ name: "Luis", email: "luis@example.com", age: 30, role: "viewer" });
-createUser({ id: 9, name: "Luis", email: "luis@example.com", age: 30, role: "viewer" });
